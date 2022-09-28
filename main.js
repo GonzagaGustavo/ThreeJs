@@ -1,10 +1,12 @@
 import * as THREE from 'three'
 import { camera } from './src/camera'
+import './src/move'
 
 const scene = new THREE.Scene()
 
 const renderer = new THREE.WebGLRenderer()
 renderer.setSize(window.innerWidth, window.innerHeight)
+renderer.shadowMap.enabled = true
 document.body.appendChild( renderer.domElement )
 
 // cube
