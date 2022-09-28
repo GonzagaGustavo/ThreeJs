@@ -13,7 +13,7 @@ function jump() {
 
 document.addEventListener(
   "keydown",
-  async (e) => {
+  (e) => {
     const key = e.key.toLowerCase();
     if (key == "a") {
       camera.position.x -= 0.1;
